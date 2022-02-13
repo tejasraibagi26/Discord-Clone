@@ -1,0 +1,126 @@
+#sidebar {
+  width: 70px;
+  height: 100vh;
+  background-color: var(--background-tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+#sidebar .container::-webkit-scrollbar {
+  display: none;
+}
+
+#sidebar .container .top .kinda-circle {
+  border-radius: 16px;
+  background-color: var(--brand-color);
+  padding: 15px 10px;
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+#sidebar .container .top .kinda-circle svg {
+  color: white;
+}
+
+#sidebar .container .divider {
+  width: 40px;
+  min-height: 2px;
+  color: aliceblue;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+#sidebar .container .channels {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar .container .channels .channel {
+  height: 50px;
+  padding: 0 12px;
+  border-radius: 50%;
+  background-color: var(--background-secondary);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  transition: border-radius 0.1s ease-in;
+}
+#sidebar .container .channels .channel:hover {
+  border-radius: 35%;
+}
+
+#sidebar .container .channels .channel svg {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar .container .end .channel {
+  height: 50px;
+  padding: 0 12px;
+  border-radius: 50%;
+  margin-top: 10px;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  transition: border-radius 0.1s ease-in;
+}
+#sidebar .container .end .channel svg {
+  color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+}
+
+#sidebar .container .end .channel:hover {
+  border-radius: 35%;
+}
+
+#sidebar .container .end .channel:first-child {
+  margin-top: 0;
+}
+
+#sidebar .container .end .channel:last-child {
+  margin-bottom: 10px;
+}
+
+#sidebar .container .download .channel {
+  height: 50px;
+  padding: 0 12px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  transition: border-radius 0.1s ease-in;
+}
+#sidebar .container .download .channel svg {
+  color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+}
+
+#sidebar .container .download .channel:hover {
+  border-radius: 35%;
+}
